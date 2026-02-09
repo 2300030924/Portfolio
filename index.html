@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhavya Sri | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">Bhavya Sri<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm <span>Bhavya Sri</span></h1>
+    <h2><span class="typing"></span></h2>
+    <p>Computer Science Engineering student passionate about AI, Computer Vision, and Cloud Technologies.</p>
+    <a href="#contact" class="btn">Hire Me</a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+  <h2 class="section-title">About Me</h2>
+  <p class="about-text">
+    I am a Computer Science Engineering student at KL University with a GPA of 9.87.
+    I specialize in AI systems, computer vision, backend development, and cloud platforms.
+    I love building real-world impactful solutions through internships and projects.
+  </p>
+
+  <div class="stats">
+    <div class="stat">
+      <h3 data-count="9.87">0</h3>
+      <p>GPA</p>
+    </div>
+    <div class="stat">
+      <h3 data-count="6">0</h3>
+      <p>Certifications</p>
+    </div>
+    <div class="stat">
+      <h3 data-count="3">0</h3>
+      <p>Major Projects</p>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section dark">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">Java</div>
+    <div class="skill-card">Python</div>
+    <div class="skill-card">C</div>
+    <div class="skill-card">Flask</div>
+    <div class="skill-card">Spring Boot</div>
+    <div class="skill-card">Computer Vision</div>
+    <div class="skill-card">Deep Learning</div>
+    <div class="skill-card">Speech Processing</div>
+    <div class="skill-card">AWS</div>
+    <div class="skill-card">Docker</div>
+    <div class="skill-card">CI/CD</div>
+    <div class="skill-card">React.js</div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section">
+  <h2 class="section-title">Projects</h2>
+
+  <!-- Filter Buttons -->
+  <div class="project-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="ai">AI</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="cloud">Cloud</button>
+  </div>
+
+  <!-- Projects Grid -->
+  <div class="projects-grid">
+
+    <div class="project-card" data-category="ai">
+      <h3>Vehicle Detection & Counting</h3>
+      <p>
+        Real-time vehicle detection, tracking, and counting using YOLOv8 and OpenCV.
+      </p>
+      <div class="project-tags">
+        <span>Python</span>
+        <span>YOLOv8</span>
+        <span>OpenCV</span>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="ai">
+      <h3>Internal Knowledge Navigator</h3>
+      <p>
+        AI-powered internal document search using RAG, embeddings, and Gemini.
+      </p>
+      <div class="project-tags">
+        <span>RAG</span>
+        <span>Embeddings</span>
+        <span>Gemini</span>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="ai">
+      <h3>VoxDetect</h3>
+      <p>
+        Speaker diarization and ASR system using Whisper with structured JSON output.
+      </p>
+      <div class="project-tags">
+        <span>Whisper</span>
+        <span>Audio AI</span>
+        <span>Python</span>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="web">
+      <h3>Personal Portfolio</h3>
+      <p>
+        Responsive portfolio website with animations and modern UI.
+      </p>
+      <div class="project-tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="cloud">
+      <h3>AWS Cloud Deployment</h3>
+      <p>
+        Deployed scalable applications using AWS EC2, RDS, and CI/CD pipelines.
+      </p>
+      <div class="project-tags">
+        <span>AWS</span>
+        <span>Docker</span>
+        <span>CI/CD</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Contact -->
+<section id="contact" class="section dark">
+  <h2 class="section-title">Contact Me</h2>
+  <div class="contact-info">
+    <p>Email: <a href="mailto:rbhavyasri.ai@gmail.com">rbhavyasri.ai@gmail.com</a></p>
+    <p>Phone: +91 9966053355</p>
+    <p>
+      <a href="https://www.linkedin.com/in/rbhavyasri" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/2300030924" target="_blank">GitHub</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Bhavya Sri. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
