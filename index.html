@@ -1,220 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bhavya Sri | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
+
 <body>
 
-<!-- Navbar -->
-<nav class="navbar">
-  <div class="logo">Bhavya Sri</div>
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<!-- Hero Section -->
-<section class="hero">
-  <div class="hero-container">
-
-    <div class="hero-text">
-      <h1>Hi, I'm <span>Bhavya Sri</span></h1>
-      <h3>AI Engineer · Computer Vision · Backend Developer</h3>
-      <p>
-        Engineering AI-driven applications with strong foundations in deep learning and scalable backend systems.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#projects" class="btn-primary">View Projects</a>
-        <a href="https://github.com/2300030924" target="_blank" class="btn-outline">GitHub</a>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <div class="logo-name">Bhavya Sri R</div>
+      <div class="logo-subtitle">
+        AI Engineer · Backend Developer · Cloud Enthusiast
       </div>
     </div>
 
-    <div class="hero-image">
-      <img src="Bhavya_image.jpg" alt="Bhavya Sri">
+
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#profiles">Profiles</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+
+      <!-- LEFT CONTENT -->
+      <div class="hero-content">
+        <h1>Hi, I'm <span>Bhavya Sri</span></h1>
+
+        <p class="hero-description">
+          🎓 Computer Science Engineering student at KL University <br>(CGPA: 9.76). <br>
+          🤖 Specializing in AI systems, Computer Vision, Backend Development & Cloud Platforms. <br>
+          🚀 Passionate about building impactful real-world solutions through projects and continuous learning.
+        </p>
+
+
+        <!-- Social Icons -->
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/rbhavyasri" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/2300030924" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">Explore My Work</a>
+        </div>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="hero-image">
+        <img src="Bhavya_image.jpeg" alt="Bhavya Sri">
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2 class="section-title">🛠️ Projects</h2>
+
+    <div class="projects-grid">
+
+      <!-- Internal Knowledge Navigator -->
+      <div class="project-card" data-category="ai">
+        <h3>Internal Knowledge Navigator</h3>
+        <p>
+          AI-powered document assistant using Retrieval-Augmented Generation (RAG) for intelligent internal knowledge
+          querying.
+        </p>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>RAG</span>
+          <span>NLP</span>
+          <span>Vector DB</span>
+        </div>
+        <a href="https://github.com/2300030924/Internal-Knowledge-Navigator" target="_blank"
+          class="project-btn">GitHub</a>
+      </div>
+
+      <!-- PneumoVision AI -->
+      <div class="project-card" data-category="ai">
+        <h3>PneumoVision AI</h3>
+        <p>
+          ResNet18-based deep learning system for multi-class pneumonia detection with real-time Flask deployment.
+        </p>
+        <div class="project-tags">
+          <span>PyTorch</span>
+          <span>ResNet18</span>
+          <span>Flask</span>
+        </div>
+        <a href="https://github.com/2300030924/PneumoVision-AI" target="_blank" class="project-btn">GitHub</a>
+      </div>
+
+      <!-- Vehicle Detection -->
+      <div class="project-card" data-category="ai">
+        <h3>Vehicle Detection & Tracking</h3>
+        <p>
+          Real-time vehicle detection, tracking, and counting using YOLOv8 with unique ID assignment.
+        </p>
+        <div class="project-tags">
+          <span>YOLOv8</span>
+          <span>OpenCV</span>
+          <span>Computer Vision</span>
+        </div>
+        <a href="https://github.com/2300030924/vehicle-detection-tracking" target="_blank"
+          class="project-btn">GitHub</a>
+      </div>
+
+      <!-- VoxDetect -->
+      <div class="project-card" data-category="ai">
+        <h3>VoxDetect</h3>
+        <p>
+          Multi-speaker speech recognition and diarization system using Whisper for structured transcription.
+        </p>
+        <div class="project-tags">
+          <span>Whisper</span>
+          <span>ASR</span>
+          <span>Audio AI</span>
+        </div>
+        <a href="https://github.com/2300030924/VoxDetect" target="_blank" class="project-btn">GitHub</a>
+      </div>
+
+      <!-- Heart Disease -->
+      <div class="project-card" data-category="web">
+        <h3>Heart Disease Classification</h3>
+        <p>
+          Machine learning web application to predict heart disease risk using structured medical datasets.
+        </p>
+        <div class="project-tags">
+          <span>Flask</span>
+          <span>Machine Learning</span>
+          <span>Python</span>
+        </div>
+        <a href="https://github.com/2300030924/HeartDisease-Project-" target="_blank" class="project-btn">GitHub</a>
+      </div>
+
+      <!-- Fraud Detection -->
+      <div class="project-card" data-category="ai">
+        <h3>Fraud Detection</h3>
+        <p>
+          Supervised machine learning system to detect fraudulent transaction patterns.
+        </p>
+        <div class="project-tags">
+          <span>Scikit-Learn</span>
+          <span>Python</span>
+        </div>
+        <a href="https://github.com/2300030924/Fraud-Detection" target="_blank" class="project-btn">GitHub</a>
+      </div>
+
+      <!-- Currency Converter Bot -->
+      <div class="project-card" data-category="web">
+        <h3>Currency Converter Chatbot</h3>
+        <p>
+          Interactive chatbot for real-time currency conversion using API integration.
+        </p>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>API</span>
+          <span>Chatbot</span>
+        </div>
+        <a href="https://github.com/2300030924/Currency-Converter-Bot" target="_blank" class="project-btn">GitHub</a>
+      </div>
+
     </div>
 
-  </div>
-</section>
+  </section>
+
+
+  <section id="certifications" class="cert-section">
+    <h2 class="section-title">🏆 Certifications</h2>
+
+    <div class="cert-grid">
+
+      <div class="cert-card">
+        <h4>AWS Certified Cloud Practitioner</h4>
+        <p>Amazon Web Services</p>
+
+        <a href="https://drive.google.com/file/d/1gV-YWMmRNbi9K9OoEEmkdgI4Efchvsw5/view?usp=drive_link" target="_blank"
+          class="cert-btn">
+          View Credential
+        </a>
+      </div>
+
+      <div class="cert-card">
+        <h4>Salesforce Certified AI Associate</h4>
+        <p>Salesforce</p>
+        <a href="https://drive.google.com/file/d/1nLbCsMiSf6qVk6VcEK8I3nXvbJfUj41S/view?usp=drive_link" target="_blank"
+          class="cert-btn">
+          View Credential
+        </a>
+      </div>
+
+      <div class="cert-card">
+        <h4>Certified Essentials Automation Professional</h4>
+        <p>Automation Anywhere </p>
+        <a href="https://drive.google.com/file/d/1vdKvrDDEgUWi6EIbkd-SHmalwkto_01T/view?usp=drive_link" target="_blank"
+          class="cert-btn">
+          View Credential
+        </a>
+      </div>
+
+      <div class="cert-card">
+        <h4>Aviatrix Multi-Cloud Networking Associate</h4>
+        <p>Aviatrix</p>
+        <a href="https://drive.google.com/file/d/1s1YP09MNIQxVpHV8UrqYWVYw16LM-CLo/view?usp=drive_link" target="_blank"
+          class="cert-btn">
+          View Credential
+        </a>
+      </div>
+
+      <div class="cert-card">
+        <h4>JP Morgan Software Engineering Virtual Experience</h4>
+        <p>JP Morgan Chase</p>
+      </div>
+
+      <div class="cert-card">
+        <h4>Accenture Internship Certification</h4>
+        <p>Accenture</p>
+      </div>
+
+      <div class="cert-card">
+        <h4>HackerRank Software Engineer Certificate</h4>
+        <p>HackerRank</p>
+      </div>
+
+      <div class="cert-card">
+        <h4>Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</h4>
+        <p>Oracle</p>
+      </div>
 
 
 
-<!-- About -->
-<section id="about" class="section">
-  <h2 class="section-title">About Me</h2>
-  <p class="about-text">
-    I am a Computer Science Engineering student at KL University with a GPA of 9.87.
-    I specialize in AI systems, computer vision, backend development, and cloud platforms.
-    I love building real-world impactful solutions through internships and projects.
-  </p>
 
-  <div class="stats">
-    <div class="stat">
-      <h3 data-count="9.87">9.76</h3>
-      <p>GPA</p>
     </div>
-    <div class="stat">
-      <h3 data-count="6">6</h3>
-      <p>Certifications</p>
+  </section>
+
+  <!-- Profiles -->
+  <section id="profiles" class="profiles-section">
+    <h2 class="section-title">💻 Profiles</h2>
+
+    <div class="profiles-grid">
+
+      <!-- LeetCode -->
+      <div class="profile-card">
+        <h3>LeetCode</h3>
+        <p> ⭐ Solved 150+ problems</p>
+        <a href="https://leetcode.com/u/klu2300030924/" target="_blank" class="profile-link">
+          Visit Profile →
+        </a>
+      </div>
+
+      <!-- GitHub -->
+      <div class="profile-card">
+        <h3>GitHub</h3>
+        <p>💡 Active contributor</p>
+        <a href="https://github.com/2300030924" target="_blank" class="profile-link">
+          Visit Profile →
+        </a>
+      </div>
+
+      <!-- LinkedIn -->
+      <div class="profile-card">
+        <h3>LinkedIn</h3>
+        <p>🔗 Professional Network</p>
+        <a href="https://www.linkedin.com/in/rbhavyasri" target="_blank" class="profile-link">
+          Visit Profile →
+        </a>
+      </div>
+
+      <!-- CodeChef -->
+      <div class="profile-card">
+        <h3>CodeChef</h3>
+        <p>🏅 Competitive Programming</p>
+        <a href="https://www.codechef.com/users/kl2300030924" target="_blank" class="profile-link">
+          Visit Profile →
+        </a>
+      </div>
+
     </div>
-    <div class="stat">
-      <h3 data-count="6">5</h3>
-      <p>Major Projects</p>
+  </section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">📩 Contact Me</h2>
+
+    <div class="contact-container">
+      <p><strong>Email:</strong>
+        <a href="mailto:rbhavyasri.ai@gmail.com">
+          rbhavyasri.ai@gmail.com
+        </a>
+      </p>
+
+      <p><strong>Phone:</strong> +91 9966053355</p>
+
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/rbhavyasri" target="_blank">
+          LinkedIn
+        </a>
+        <span> | </span>
+        <a href="https://github.com/2300030924" target="_blank">
+          GitHub
+        </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Skills -->
-<section id="skills" class="section dark">
-  <h2 class="section-title">Skills</h2>
-  <div class="skills-grid">
-    <div class="skill-card">Java</div>
-    <div class="skill-card">Python</div>
-    <div class="skill-card">C</div>
-    <div class="skill-card">Flask</div>
-    <div class="skill-card">Spring Boot</div>
-    <div class="skill-card">Computer Vision</div>
-    <div class="skill-card">Deep Learning</div>
-    <div class="skill-card">Speech Processing</div>
-    <div class="skill-card">AWS</div>
-    <div class="skill-card">Docker</div>
-    <div class="skill-card">CI/CD</div>
-    <div class="skill-card">React.js</div>
-  </div>
-</section>
-<section id="projects" class="section">
-  <h2 class="section-title">🛠️ Projects</h2>
 
-<div class="projects-grid">
-
-  <!-- Internal Knowledge Navigator -->
-  <div class="project-card" data-category="ai">
-    <h3>Internal Knowledge Navigator</h3>
-    <p>
-      AI-powered document assistant using Retrieval-Augmented Generation (RAG) for intelligent internal knowledge querying.
-    </p>
-    <div class="project-tags">
-      <span>Python</span>
-      <span>RAG</span>
-      <span>NLP</span>
-      <span>Vector DB</span>
+  <footer class="footer-bar">
+    <div class="footer-content">
+      © 2026 Bhavya Sri • Built using HTML, CSS & JS
     </div>
-    <a href="https://github.com/2300030924/Internal-Knowledge-Navigator" target="_blank" class="project-btn">GitHub</a>
-  </div>
-
-  <!-- PneumoVision AI -->
-  <div class="project-card" data-category="ai">
-    <h3>PneumoVision AI</h3>
-    <p>
-      ResNet18-based deep learning system for multi-class pneumonia detection with real-time Flask deployment.
-    </p>
-    <div class="project-tags">
-      <span>PyTorch</span>
-      <span>ResNet18</span>
-      <span>Flask</span>
-    </div>
-    <a href="https://github.com/2300030924/PneumoVision-AI" target="_blank" class="project-btn">GitHub</a>
-  </div>
-
-  <!-- Vehicle Detection -->
-  <div class="project-card" data-category="ai">
-    <h3>Vehicle Detection & Tracking</h3>
-    <p>
-      Real-time vehicle detection, tracking, and counting using YOLOv8 with unique ID assignment.
-    </p>
-    <div class="project-tags">
-      <span>YOLOv8</span>
-      <span>OpenCV</span>
-      <span>Computer Vision</span>
-    </div>
-    <a href="https://github.com/2300030924/vehicle-detection-tracking" target="_blank" class="project-btn">GitHub</a>
-  </div>
-
-  <!-- VoxDetect -->
-  <div class="project-card" data-category="ai">
-    <h3>VoxDetect</h3>
-    <p>
-      Multi-speaker speech recognition and diarization system using Whisper for structured transcription.
-    </p>
-    <div class="project-tags">
-      <span>Whisper</span>
-      <span>ASR</span>
-      <span>Audio AI</span>
-    </div>
-    <a href="https://github.com/2300030924/VoxDetect" target="_blank" class="project-btn">GitHub</a>
-  </div>
-
-  <!-- Heart Disease -->
-  <div class="project-card" data-category="web">
-    <h3>Heart Disease Classification</h3>
-    <p>
-      Machine learning web application to predict heart disease risk using structured medical datasets.
-    </p>
-    <div class="project-tags">
-      <span>Flask</span>
-      <span>Machine Learning</span>
-      <span>Python</span>
-    </div>
-    <a href="https://github.com/2300030924/HeartDisease-Project-" target="_blank" class="project-btn">GitHub</a>
-  </div>
-
-  <!-- Fraud Detection -->
-  <div class="project-card" data-category="ai">
-    <h3>Fraud Detection</h3>
-    <p>
-      Supervised machine learning system to detect fraudulent transaction patterns.
-    </p>
-    <div class="project-tags">
-      <span>Scikit-Learn</span>
-      <span>Python</span>
-    </div>
-    <a href="https://github.com/2300030924/Fraud-Detection" target="_blank" class="project-btn">GitHub</a>
-  </div>
-
-  <!-- Currency Converter Bot -->
-  <div class="project-card" data-category="web">
-    <h3>Currency Converter Chatbot</h3>
-    <p>
-      Interactive chatbot for real-time currency conversion using API integration.
-    </p>
-    <div class="project-tags">
-      <span>Python</span>
-      <span>API</span>
-      <span>Chatbot</span>
-    </div>
-    <a href="https://github.com/2300030924/Currency-Converter-Bot" target="_blank" class="project-btn">GitHub</a>
-  </div>
-
-</div>
-</section>
+  </footer>
 
 
+  <script src="script.js"></script>
+  <script>
+    const projectCards = document.querySelectorAll(".project-card");
 
-<!-- Contact -->
-<section id="contact" class="section dark">
-  <h2 class="section-title">Contact Me</h2>
-  <div class="contact-info">
-    <p>Email: <a href="mailto:rbhavyasri.ai@gmail.com">rbhavyasri.ai@gmail.com</a></p>
-    <p>Phone: +91 9966053355</p>
-    <p>
-      <a href="https://www.linkedin.com/in/rbhavyasri" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/2300030924" target="_blank">GitHub</a>
-    </p>
-  </div>
-</section>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = "translateY(0)";
+        }
+      });
+    }, { threshold: 0.2 });
 
-<footer>
-  <p>© 2026 Bhavya Sri. All rights reserved.</p>
-</footer>
+    projectCards.forEach(card => {
+      card.style.opacity = 0;
+      card.style.transform = "translateY(60px)";
+      card.style.transition = "all 0.8s ease";
+      observer.observe(card);
+    });
+  </script>
 
-<script src="script.js"></script>
 </body>
+
 </html>
